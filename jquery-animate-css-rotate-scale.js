@@ -89,7 +89,7 @@
         $(fx.elem).scale(fx.now);
     }
     
-    /*
+   
     
     Starting on line 3905 of jquery-1.3.2.js we have this code:
     
@@ -99,7 +99,7 @@
         start = ((end || 1) / e.cur(true)) * start;
         self.style[ name ] = start + unit;
     }
-    
+     /*
     This creates a problem where we cannot give units to our custom animation
     because if we do then this code will execute and because self.style[name]
     does not exist where name is our custom animation's name then e.cur(true)
